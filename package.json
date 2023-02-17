@@ -31,10 +31,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "deploy": "gh-pages -d build -r git@github.com:joki20/exjobb-app.git",
+    "build": "webpack --mode production",
+    "deploy": "webpack --mode production && gh-pages -d build -r git@github.com:joki20/exjobb-app.git",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build": "webpack --mode production",
     "start": "webpack serve --port 3000 --mode development --open --hot"
   },
   "eslintConfig": {
