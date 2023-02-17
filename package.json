@@ -32,7 +32,7 @@
   },
   "scripts": {
     "build": "webpack --mode production",
-    "deploy": "webpack --mode production && gh-pages -d -r git@github.com:joki20/exjobb-app.git",
+    "deploy": "webpack --mode production && -d -r git@github.com:joki20/exjobb-app.git",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "start": "webpack serve --port 3000 --mode development --open --hot"

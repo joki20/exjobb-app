@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-      "outDir": "/build",
+      "outDir": "/distaaa",
       "noImplicitAny": true,
       "module": "esnext",
       "target": "es2022",
