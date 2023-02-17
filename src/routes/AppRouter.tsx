@@ -20,7 +20,7 @@ export default function AppRouter(props:any) {
     return (
         <div>
             <Routes>
-                <Route path="/https://joki20.github.io/exjobb-app" element={<Login props={props} />} />
+                <Route path="https://joki20.github.io/exjobb-app" element={<Login props={props} />} />
                 <Route path="/logs" element={<Logs props={props} />} />
                 <Route path="/logs/:path" element={<LogsDetail props={props} />} />
                 <Route path="/info" element={<Info props={props} />} />
