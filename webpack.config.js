@@ -1,34 +1,22 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require('path');
+
 module.exports = {
-  entry: './src/index.tsx',
-  output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js",
-  },
-  resolve: {
-    extensions: [".js", ".jsx", ".json", ".ts", ".tsx"],
-  },
+  entry: './src/index.ts', // webpack enters here
+  devtool: 'inline-source-map', // eextract source maps from tsconfig.json
   module: {
     rules: [
       {
-        test: /\.(ts|tsx)$/,
-        loader: "ts-loader",
-      },
-      {
-        enforce: "pre",
-        test: /\.js$/,
-        loader: "source-map-loader",
-      },
-      {
-        test: /\.css$/,
-        loader: "css-loader",
+        test: /\.tsx?$/,
+        use: 'ts-loader', // loads all ts and tsx files, relies on tsconfig.json module
+        exclude: /node_modules/,
       },
     ],
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-    template: path.resolve(__dirname, "dist", "index.html"),
-    }),
-  ],
-}
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js'],
+  },
+  output: {
+    filename: 'bundle.js', // outputs this file
+    path: path.resolve(__dirname, 'dist'),
+  },
+};

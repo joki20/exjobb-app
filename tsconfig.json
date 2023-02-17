@@ -1,10 +1,12 @@
 {
     "compilerOptions": {
-      "outDir": "/dist",
+      "outDir": "./dist",
+      "rootDir": ".",
+      "sourceMap": true, // maps JSX code back to JS code in order to find errors
       "noImplicitAny": true,
       "module": "esnext",
-      "target": "es2022",
-      "jsx": "react-jsx",
+      "target": "es2020",
+      "jsx": "react-jsx", // how JSX is transformed into JS
       "allowJs": true,
       "allowSyntheticDefaultImports": true,
       "moduleResolution": "Node"

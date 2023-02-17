@@ -34,12 +34,6 @@ export default function Logs({props}:any) {
     const prepareButtons = async() => {
         let year: string, month: string, day: string , date: string;
 
-        // disable month click
-        let monthButton = document.getElementsByClassName('react-calendar__navigation__label')[0] as HTMLElement;
-        monthButton.style.pointerEvents = "none";
-        monthButton.style.fontWeight = "bold";
-        monthButton.style.userSelect = "none";
-
         // set dates as state 'buttonsHTMLCollection' (useEffect runs)
         let datesHTMLCollection = document.getElementsByClassName("react-calendar__month-view__days__day") as HTMLCollectionOf<HTMLElement>;
 
