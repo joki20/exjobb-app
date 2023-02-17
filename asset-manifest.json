@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/exjobb-app/static/css/main.673e2384.css",
-    "main.js": "/exjobb-app/static/js/main.c442cc45.js",
+    "main.js": "/exjobb-app/static/js/main.c43165d1.js",
     "static/js/787.2de76e81.chunk.js": "/exjobb-app/static/js/787.2de76e81.chunk.js",
     "index.html": "/exjobb-app/index.html",
     "main.673e2384.css.map": "/exjobb-app/static/css/main.673e2384.css.map",
-    "main.c442cc45.js.map": "/exjobb-app/static/js/main.c442cc45.js.map",
+    "main.c43165d1.js.map": "/exjobb-app/static/js/main.c43165d1.js.map",
     "787.2de76e81.chunk.js.map": "/exjobb-app/static/js/787.2de76e81.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.673e2384.css",
-    "static/js/main.c442cc45.js"
+    "static/js/main.c43165d1.js"
   ]
 }
