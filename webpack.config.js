@@ -1,32 +1,35 @@
-//webpack.config.js
-const path = require('path');
-var HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin');
-plugins: [
-    new HtmlWebpackPlugin({
-          inlineSource: '.(js|css)$' // embed all javascript and css inline
-      }),
-    new HtmlWebpackInlineSourcePlugin()
-  ]  
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: "development",
-  devtool: "inline-source-map",
-  entry: {
-    main: "./src/App.tsx",
-  },
+  entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, './dist'),
-    filename: "app-bundle.js" // <--- Will be compiled to this single file
+    filename: "main.js",
+    path: path.resolve(__dirname, "build"),
   },
-  resolve: {
-    extensions: [".ts", ".tsx", ".js"],
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, "public", "index.html"),
+    }),
+  ],
+  devServer: {
+    static: {
+      directory: path.join(__dirname, "build"),
+    },
+    port: 3000,
   },
   module: {
+    // exclude node_modules
     rules: [
-      { 
-        test: /\.tsx?$/,
-        loader: "ts-loader"
-      }
-    ]
+      {
+        test: /\.(js)$/,
+        exclude: /node_modules/,
+        use: ["babel-loader"],
+      },
+    ],
+  },
+  // pass all js files through Babel
+  resolve: {
+    extensions: ["*", ".js", ".ts", ".tsx"],
   }
 };
