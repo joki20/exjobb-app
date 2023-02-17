@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
     <BrowserRouter>
-        <HashRouter basename="/" >
+        <HashRouter basename="/xyz" >
             <App />
         </HashRouter>
     </BrowserRouter>
