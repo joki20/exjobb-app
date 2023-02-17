@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/exjobb-app/static/css/main.673e2384.css",
-    "main.js": "/exjobb-app/static/js/main.7aa4af9f.js",
-    "static/js/787.2de76e81.chunk.js": "/exjobb-app/static/js/787.2de76e81.chunk.js",
-    "index.html": "/exjobb-app/index.html",
-    "main.673e2384.css.map": "/exjobb-app/static/css/main.673e2384.css.map",
-    "main.7aa4af9f.js.map": "/exjobb-app/static/js/main.7aa4af9f.js.map",
-    "787.2de76e81.chunk.js.map": "/exjobb-app/static/js/787.2de76e81.chunk.js.map"
+    "main.css": "/static/css/main.673e2384.css",
+    "main.js": "/static/js/main.69bdd597.js",
+    "static/js/787.2de76e81.chunk.js": "/static/js/787.2de76e81.chunk.js",
+    "index.html": "/index.html",
+    "main.673e2384.css.map": "/static/css/main.673e2384.css.map",
+    "main.69bdd597.js.map": "/static/js/main.69bdd597.js.map",
+    "787.2de76e81.chunk.js.map": "/static/js/787.2de76e81.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.673e2384.css",
-    "static/js/main.7aa4af9f.js"
+    "static/js/main.69bdd597.js"
   ]
 }
