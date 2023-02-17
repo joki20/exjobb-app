@@ -23,7 +23,7 @@ export default function App() {
 
     useEffect(() => {
         async function fetchData() {
-            navigate(currentPage) // in order to preserve state between pages
+            // navigate(currentPage) // in order to preserve state between pages
         }
         fetchData();
       }, [currentPage]); // when currentPage changes, useEffect reloads
