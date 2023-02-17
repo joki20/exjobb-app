@@ -12,7 +12,6 @@ import { useLocation } from "react-router-dom";
 // props from App.tsx
 export default function AppRouter(props:any) {
     let currentRoute = useLocation().pathname; // mandatory: <App> surrounded by <BrowserRouter> inside index.tsx
-    let path = currentRoute.split("/")[2]
     
     // routes only accessible when logged in is true
     // destructure props within each page like this: {props}
@@ -20,7 +19,7 @@ export default function AppRouter(props:any) {
     return (
         <div>
             <Routes>
-                <Route path="https://joki20.github.io/exjobb-app/" element={<Login props={props} />} />
+                <Route path="https://joki20.github.io" element={<Login props={props} />} />
                 {/* <Route path="/logs" element={<Logs props={props} />} />
                 <Route path="/logs/:path" element={<LogsDetail props={props} />} />
                 <Route path="/info" element={<Info props={props} />} />
