@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-    <HashRouter basename="/exjobb-app">
+    <HashRouter basename="/">
         <App />
     </HashRouter>
 );
