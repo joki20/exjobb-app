@@ -1,0 +1,125 @@
+form {
+    max-width: 100%;
+    font-size: var(--fontSizeNormal);
+    padding: var(--paddingNormal);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    width: 70%;
+    font-size: var(--fontSizeLarger);
+    margin: 0.5rem 0.5rem; /* top-bottom left-right */
+}
+
+input {
+    width: 95%;
+    border-radius: 10px;
+    padding: var(--paddingInput);
+    text-align: center;
+    font-size: 1rem;
+    outline: 1px solid black;
+}
+
+input[type="checkbox"] {
+    outline: 0;
+    width: var(--checkboxSize);
+    height: var(--checkboxSize);
+    border: 4px solid black;
+    margin-left: auto;
+}
+
+
+input[type="submit"] {
+    font-size: var(--fontSizeLarger);
+    border-radius: 15px;
+    margin-top: 2rem;
+    background-color: var(--green);
+    color: white;
+    outline: none;
+    width: 95%;
+}
+
+.LogsDetail form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.LogsDetail div {
+    width: 100%;
+    padding: 0.5rem 0;
+    margin: 0;
+}
+
+.LogsDetail div:nth-child(even).project {
+    background-color: #ddd;
+}
+
+.LogsDetail label {
+    text-align: left;
+    font-size: var(--fontSizeNormal)
+}
+
+.LogsDetail input {
+    width: 20%;
+}
+
+.LogsDetail input[type="submit"] {
+    margin: 2rem auto;
+    width: 95%;
+}
+
+
+
+.LogsDetail p {
+    font-size: var(--fontSizeLarger);
+    font-weight: bold;
+    padding-left: 0.5rem;
+}
+
+
+
+input[type="submit"]:disabled {
+
+    background-color: var(--greenDisabled);
+}
+
+.login {
+    position: fixed;
+    top: 25%;
+}
+
+.login input {
+    font-size: var(--fontSizeBig);
+    padding: 1rem;
+}
+
+.overtimeError {
+    color: red;
+}
+
+.overtime {
+    font-weight: normal;
+    font-size: var(--fontSizeLarger)
+}
+
+.errorMessage {
+    text-align: left;
+    height: 1rem;
+    padding-left:0;
+    font-size: 1rem;
+}
+
+.back {
+    position: absolute;
+    left: 1rem;
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+}

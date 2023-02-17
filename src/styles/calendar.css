@@ -1,0 +1,69 @@
+.calendar {
+    width: 100%; /* full width of html */
+    margin: 0 auto;
+    margin-top: 30%;
+    z-index: 1;
+}
+
+.react-calendar__month-view__days > button {
+    border: 1px solid #aaa;
+    height: 60px;
+    font-size: var(--fontSizeLarger)
+}
+
+.react-calendar__month-view__weekdays__weekday abbr[title] {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* week numbers */
+.react-calendar__month-view__weekNumbers {
+    height: 38vh;
+}
+
+.green-background {
+    background-color: lime;
+    pointer-events: none;
+    color: black;
+}
+
+.green-background:disabled {
+    background-color: lime;
+    pointer-events: none;
+    color: black;
+}
+
+/* dates that are not clickable */
+.react-calendar__month-view__days__day:disabled {
+    color: black;
+    user-select: none;
+}
+
+/* dates that are clickable */
+.react-calendar__month-view__days__day {
+    color: blue;
+    user-select: none;
+}
+
+/* current date */
+.react-calendar__tile--now {
+    color: white;
+}
+
+/* weekend dates */
+.react-calendar__month-view__days__day--weekend {
+    /* color: red; */
+    font-style: italic;
+}
+
+.react-calendar__month-view__days__day:enabled:nth-of-type(7n+6),
+.react-calendar__month-view__days__day:disabled:nth-of-type(7n+6)
+{
+    border-left: 2px solid black;
+}
+
+.react-calendar__navigation__label {
+    pointer-events: none;
+    font-weight: bold;
+    user-select: none;
+}

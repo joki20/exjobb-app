@@ -1,0 +1,11 @@
+:root {
+    --green: rgba(60, 179, 113, 1);
+    --greenDisabled: rgba(60, 179, 113, 0.5);
+    --paddingNormal: 1rem;
+    --paddingInput: 0.3rem;
+    --fontSizeNormal: 1rem;
+    --fontSizeLarger: 1.4rem;
+    --fontSizeBig: 2rem;
+    --checkboxSize: 2rem;
+    --inputWidth: 90%;
+}
