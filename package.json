@@ -12,10 +12,12 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.11",
-    "@types/react": "^18.0.27",
-    "@types/react-dom": "^18.0.10",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^9.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "bootstrap": "^5.2.3",
+    "cross-env": "^7.0.3",
     "electron-rebuild": "^3.2.9",
     "gh-pages": "^5.0.0",
     "react": "^18.2.0",
@@ -32,8 +34,8 @@
     "deploy": "gh-pages -d build -r git@github.com:joki20/exjobb-app.git",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build": "cross-env NODE_ENV=production webpack",
-    "start": "webpack serve --mode development"
+    "build": "webpack --mode production",
+    "start": "webpack serve --port 3000 --mode development --open --hot"
   },
   "eslintConfig": {
     "extends": [
@@ -54,13 +56,19 @@
     ]
   },
   "devDependencies": {
+    "@types/node": "^18.13.0",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
     "@types/react-router-dom": "^5.3.3",
+    "css-loader": "^6.7.3",
     "html-webpack-inline-source-plugin": "^0.0.10",
     "html-webpack-plugin": "^5.5.0",
+    "source-map-loader": "^4.0.1",
     "ts-loader": "^9.4.2",
     "typescript": "^4.9.5",
     "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.1"
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "setupProxy.js",
